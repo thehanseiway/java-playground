@@ -1,13 +1,13 @@
 package ru.vr.sandbox;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class SquareTests {
 
     @Test
     public void testArea () {
         Square square = new Square(5);
-        Assert.assertEquals(25, square.area());
+        Assert.assertEquals(square.area(), 25);
     }
 }
